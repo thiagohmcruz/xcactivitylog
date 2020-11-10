@@ -258,6 +258,9 @@ module XCActivityLog
   class IDEActivityLogAnalyzerWarningMessage < IDEActivityLogMessage
     attributes.freeze
   end
+  class IDEDiagnosticActivityLogMessage < IDEActivityLogMessage
+    attributes.freeze
+  end
 
   class IDEActivityLogAnalyzerControlFlowStepEdge < SerializedObject
     attribute :start_location, :document_location
